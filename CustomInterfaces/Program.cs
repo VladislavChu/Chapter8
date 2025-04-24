@@ -44,7 +44,36 @@ Console.ReadLine();
 
 
 
-//CloneableExample();
+//IRegularPointy sq = new Square("Boxy") {NumberOfSides = 4, SideLength = 4 };
+var sq = new Square("Boxy") {NumberOfSides = 4, SideLength = 4 };
+sq.Draw();
+Console.WriteLine($"{sq.PetName} has {sq.NumberOfSides} of length {sq.SideLength} and a perimeter of {((IRegularPointy)sq).Perimeter}");
+Console.ReadLine();
+
+Console.WriteLine($"Example property: {IRegularPointy.ExampleProperty}");
+IRegularPointy.ExampleProperty = "Updated";
+Console.WriteLine($"Example property: {IRegularPointy.ExampleProperty}");
+
+
+//будет рисовать любую фигуру, поддерживающую IDraw3D.
+static void DrawIn3D(IDraw3D itf3d)
+{
+    Console.WriteLine("-> Drawing IDraw3D compatible type");
+    itf3d.Draw3D();
+}
+Console.ReadLine();
+
+
+Shape[] myShapes = { new Hexagon(), new Circle, new Triangle("Joe"), new Circle("JoJo") };
+for (int i = 0; i < myShapes.Length; i++)
+{
+    if (myShapes[i] is IDraw3D s)
+    {
+        DrawIn3D(s);
+    }
+}
+Console.ReadLine();
+
 
 
 static void CloneableExample()
