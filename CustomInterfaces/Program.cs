@@ -64,7 +64,7 @@ static void DrawIn3D(IDraw3D itf3d)
 Console.ReadLine();
 
 
-Shape[] myShapes = { new Hexagon(), new Circle, new Triangle("Joe"), new Circle("JoJo") };
+Shape[] myShapes = { new Hexagon(), new Circle(), new Triangle("Joe"), new Circle("JoJo") };
 for (int i = 0; i < myShapes.Length; i++)
 {
     if (myShapes[i] is IDraw3D s)
@@ -76,6 +76,45 @@ Console.ReadLine();
 
 
 
+
+
+//Этот массив может содержать только типы,
+//которые реализуют интерфейс IPointy
+IPointy[] myPointyObjects = { new Hexagon(), new Knife(), new Triangle(), new Fork(), new PitchFork() };
+foreach (IPointy i in myPointyObjects)
+{
+    Console.WriteLine($"Object has {i.Points} points");
+}
+Console.ReadLine();
+
+
+
+//этот метод возвращает первый объект в массиве,
+//который реализует интерфейс IPointy.
+static IPointy FindFirstPointyShape(Shape[] shapes)
+{
+    foreach  (Shape s in shapes)
+    {
+        if(s is IPointy ip)
+        {
+            return ip;
+        }
+    }
+    return null;
+}
+
+IPointy firstPointyItem = FindFirstPointyShape(myShapes);
+Console.WriteLine($"The item has {firstPointyItem?.Points} points");
+Console.ReadLine();
+
+
+
+
+
+
+
+
+//CloneableExample();
 static void CloneableExample()
     {
         //все эти классы поддерживают интерфейс Icloneable

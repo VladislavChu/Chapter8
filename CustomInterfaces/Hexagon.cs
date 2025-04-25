@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace CustomInterfaces
 {
-    class Hexagon : Shape, IPointy
+    class Hexagon : Shape, IPointy, IDraw3D
     {
         public Hexagon()
         {
@@ -24,5 +24,7 @@ namespace CustomInterfaces
         }
         //реализация IPointy
         public byte Points => 6;
+
+        public void Draw3D() => Console.WriteLine("Drawing Hexagon in 3D!");
     }
 }

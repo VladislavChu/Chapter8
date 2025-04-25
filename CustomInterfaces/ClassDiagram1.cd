@@ -7,17 +7,10 @@
       <FileName>Circle.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="CustomInterfaces.CloneableType" Collapsed="true">
-    <Position X="11" Y="0.5" Width="1.5" />
-    <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABA=</HashCode>
-      <FileName>CloneableType.cs</FileName>
-    </TypeIdentifier>
-  </Class>
   <Class Name="CustomInterfaces.Hexagon" Collapsed="true">
     <Position X="8.5" Y="1.75" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAggAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <HashCode>AAAAAAAAAAAAggAAAAAAAAAEAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Hexagon.cs</FileName>
     </TypeIdentifier>
     <Lollipop Position="0.1" />
@@ -32,9 +25,10 @@
   <Class Name="CustomInterfaces.ThreeDCircle" Collapsed="true">
     <Position X="4" Y="3.25" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAIAAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <HashCode>AAAAIAAAAAAAAgAAAAAAAAAEAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>ThreeDCircle.cs</FileName>
     </TypeIdentifier>
+    <Lollipop Position="0.2" />
   </Class>
   <Class Name="CustomInterfaces.Triangle" Collapsed="true">
     <Position X="6.25" Y="1.75" Width="1.5" />
@@ -44,11 +38,64 @@
     </TypeIdentifier>
     <Lollipop Position="0.2" />
   </Class>
+  <Class Name="CustomInterfaces.Square" Collapsed="true">
+    <Position X="4.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAEAggAAAIAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Square.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="CustomInterfaces.PitchFork" Collapsed="true">
+    <Position X="10.5" Y="3" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>PitchFork.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="CustomInterfaces.Knife" Collapsed="true">
+    <Position X="10.5" Y="4" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Knife.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="CustomInterfaces.Fork" Collapsed="true">
+    <Position X="10.5" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Fork.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
   <Interface Name="CustomInterfaces.IPointy">
-    <Position X="11" Y="1.75" Width="1.5" />
+    <Position X="10.5" Y="0.5" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Properties" Collapsed="true" />
+    </Compartments>
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>IPointy.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="CustomInterfaces.IRegularPointy">
+    <Position X="12.5" Y="0.5" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Properties" Collapsed="true" />
+      <Compartment Name="Methods" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAQEAAAAAAIAAAAAAAAAAAAQAAAAAAAAAAAA=</HashCode>
+      <FileName>IRegularPointy.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="CustomInterfaces.IDraw3D">
+    <Position X="6.25" Y="3" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>IDraw3D.cs</FileName>
     </TypeIdentifier>
   </Interface>
   <Font Name="Segoe UI" Size="9" />
